@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
@@ -221,7 +222,7 @@ Route::middleware('can:accessAdminpanel')->group(function() {
         Route::get('admin/newsletter', 'Admin@newsletter')->name('adm_newsletter');
         Route::get('admin/newsletter_supprimer', 'Admin@newsletter_supprimer')->name('adm_newsletter_supprimer');
         Route::post('admin/envoi_mail', 'Admin@envoi_mail')->name('adm_envoi_mail');
-    });    
+    });
 });
 
 /*********************/
