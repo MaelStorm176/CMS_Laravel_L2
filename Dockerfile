@@ -15,12 +15,12 @@ RUN apt-get update && apt-get install -y \
     locales \
     zip \
     jpegoptim optipng pngquant gifsicle \
-    vim \
     libzip-dev \
     unzip \
     git \
     libonig-dev \
-    curl
+    curl \
+    npm \
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
